@@ -1,15 +1,39 @@
 {
-  "name": "job-board",
-  "version": "1.0.0",
-  "private": true,
+  "name": "color-string",
+  "description": "Parser and generator for CSS color strings",
+  "version": "1.9.1",
+  "author": "Heather Arthur <fayearthur@gmail.com>",
+  "contributors": [
+    "Maxime Thirouin",
+    "Dyma Ywanov <dfcreative@gmail.com>",
+    "Josh Junon"
+  ],
+  "repository": "Qix-/color-string",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "pretest": "xo",
+    "test": "node test/basic.js"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "xo": {
+    "rules": {
+      "no-cond-assign": 0,
+      "operator-linebreak": 0
+    }
   },
   "dependencies": {
-    "next": "^15.2.4",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
-  }
+    "color-name": "^1.0.0",
+    "simple-swizzle": "^0.2.2"
+  },
+  "devDependencies": {
+    "xo": "^0.12.1"
+  },
+  "keywords": [
+    "color",
+    "colour",
+    "rgb",
+    "css"
+  ]
 }
